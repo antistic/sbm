@@ -4,6 +4,11 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <div class="outer">
+            <h1>
+                <blink>The Short Brazilian Man</blink>
+            </h1>
+        </div>
         <script type="text/javascript">
             function blink() {
                 var blinks = document.getElementsByTagName('blink');
@@ -11,15 +16,12 @@
                     var s = blinks[i];
                     s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
                 }
-                window.setTimeout(blink, 1000);
+                window.setTimeout(blink, 750);
             }
             if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
             else if (window.addEventListener) window.addEventListener("load", blink, false);
             else if (window.attachEvent) window.attachEvent("onload", blink);
             else window.onload = blink;
         </script>
-        <p style="font-size: 3em; font-variant: small-caps">
-            <blink>The Short Brazilian Man</blink>
-        </p>
     </body>
 </html>
